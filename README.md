@@ -13,7 +13,7 @@ NexusHub is where freelance meets frontier, empowering individual expertise to c
 
 1. Project Incubation Platform
 
-NexusHub could provide a digital platform where freelancers pitch innovative project ideas, and those with the most potential are matched with investors or companies. It's like a crowdsourced incubation system that harnesses the collective intelligence of its community.
+NexusHub could provide a digital platform where freelancers pitch innovative pr  oject ideas, and those with the most potential are matched with investors or companies. It's like a crowdsourced incubation system that harnesses the collective intelligence of its community.
 2. Skill-Sharing Network
 
 Create a system where freelancers exchange skills, like a barter network. Experienced professionals could mentor others in exchange for help in areas outside their expertise. For example, a web developer could teach coding to a graphic designer, who in turn could assist with the developer's website design.
