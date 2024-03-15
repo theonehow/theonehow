@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal img {
+            display: block;
+            margin: auto;
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="/Imagedupm/30ypour Oct 26.png" alt="Photo 1" onclick="openModal(this.src)">
+        <img src="/Imagedupm/30ypour Oct 26-4.png" alt="Photo 2" onclick="openModal(this.src)">
+        <img src="/Imagedupm/30ypour Oct 26-5.png" alt="Photo 3" onclick="openModal(this.src)">
+        <img src="/Imagedupm/30ypour Oct 26-2.png" alt="Photo 4" onclick="openModal(this.src)">
+        <img src="/Imagedupm/30ypour Oct 26-3.png" alt="Photo 5" onclick="openModal(this.src)">
+        <!-- Concrete section-->
+        <img src="/Imagedupm/SinGrass.png" alt="Photo 5" onclick="openModal(this.src)">
+        <img src="/Imagedupm/SinGrass-1.png" alt="Photo 5" onclick="openModal(this.src)">
+        <img src="/Imagedupm/SinGrass-2.png" alt="Photo 5" onclick="openModal(this.src)">
+        <img src="/Imagedupm/SinGrass-3.png" alt="Photo 5" onclick="openModal(this.src)">
+
+        <img src="/Imagedupm/ConcreteView.png" alt="Photo 5" onclick="openModal(this.src)">
+        <img src="/Imagedupm/ConcreteView-1.png" alt="Photo 5" onclick="openModal(this.src)">
+
+        <img src="/Imagedupm/Patty.png" alt="Photo 5" onclick="openModal(this.src)">
+        <img src="/Imagedupm/Patty-1.png" alt="Photo 5" onclick="openModal(this.src)">
+        <img src="/Imagedupm/Patty-2.png" alt="Photo 5" onclick="openModal(this.src)">
+
+        <img src="/Imagedupm/GarPad.png" alt="Photo 5" onclick="openModal(this.src)">
+        <img src="/Imagedupm/GarPad-1.png" alt="Photo 5" onclick="openModal(this.src)">
+        <img src="/Imagedupm/GarPad-2.png" alt="Photo 5" onclick="openModal(this.src)">
+
+        <!-- Add more images here -->
+    </div>
+
+    <div class="modal" onclick="closeModal()">
+        <img id="modalImage" src="" alt="Modal Image">
+    </div>
+
+    <script>
+        function openModal(src) {
+            const modal = document.querySelector('.modal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = src;
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            const modal = document.querySelector('.modal');
+            modal.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
